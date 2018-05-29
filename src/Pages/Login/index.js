@@ -29,18 +29,18 @@ class Login extends Component {
   _renderPgMessage() {
     return (
       <div
-        class="message"
+        className="message"
         style={{
           backgroundColor:
             this.props.message.type !== 'error' ? '#4CAF50' : '#F44336'
         }}
       >
-        <div class="container">
-          <div class="row feed-margin">
-            <div class="col-lg-1 col-md-1 col-sm-1">
-              <span class="glyphicon glyphicon-ok" />
+        <div className="container">
+          <div className="row feed-margin">
+            <div className="col-lg-1 col-md-1 col-sm-1">
+              <span className="glyphicon glyphicon-ok" />
             </div>
-            <div class="col-lg-11 col-md-11 col-sm-11">
+            <div className="col-lg-11 col-md-11 col-sm-11">
               {this.props.message.message}
             </div>
           </div>
@@ -66,30 +66,30 @@ class Login extends Component {
             );
           }}
         />
-        <div class="comments background">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-5 col-md-5 col-sm-5 left-column">
+        <div className="comments background">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-5 col-md-5 col-sm-5 left-column">
                 <hr />
-                <span class="quote-text">
+                <span className="quote-text">
                   &ldquo;Every human being is the author of his own health or
                   disease&rdquo;
                 </span>
                 <hr />
-                <span class="quote-text quote-author">- Shobu_Live!</span>
+                <span className="quote-text quote-author">- Shobu_Live!</span>
               </div>
-              <div class="col-lg-1 col-md-1 col-sm-1" />
-              <div class="col-lg-6 col-md-6 col-sm-6">
-                <div class="sign-up-card">
+              <div className="col-lg-1 col-md-1 col-sm-1" />
+              <div className="col-lg-6 col-md-6 col-sm-6">
+                <div className="sign-up-card">
                   <div>
-                    <h2 class="head-color">Don't have an account?</h2>
-                    <h3 class="head-color">It's free and will always be!</h3>
+                    <h2 className="head-color">Don't have an account?</h2>
+                    <h3 className="head-color">It's free and will always be!</h3>
                   </div>
                   <div>
-                    <div class="row">
-                      <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div className="row">
+                      <div className="col-lg-6 col-md-6 col-sm-6">
                         <input
-                          class="form-control"
+                          className="form-control"
                           onChange={event => {
                             this.setState({
                               signInFName: event.target.value
@@ -98,9 +98,9 @@ class Login extends Component {
                           placeholder="First Name"
                         />
                       </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div className="col-lg-6 col-md-6 col-sm-6">
                         <input
-                          class="form-control"
+                          className="form-control"
                           onChange={event => {
                             this.setState({
                               signInLName: event.target.value
@@ -110,9 +110,9 @@ class Login extends Component {
                         />
                       </div>
                     </div>
-                    <div class="row major-padding">
+                    <div className="row major-padding">
                       <input
-                        class="form-control"
+                        className="form-control"
                         onChange={event => {
                           this.setState({
                             signInEmail: event.target.value
@@ -122,10 +122,10 @@ class Login extends Component {
                         placeholder="Email"
                       />
                     </div>
-                    <div class="row">
-                      <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div className="row">
+                      <div className="col-lg-6 col-md-6 col-sm-6">
                         <input
-                          class="form-control"
+                          className="form-control"
                           onChange={event => {
                             this.setState({
                               signInPassword: event.target.value
@@ -135,9 +135,9 @@ class Login extends Component {
                           placeholder="Password"
                         />
                       </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div className="col-lg-6 col-md-6 col-sm-6">
                         <input
-                          class="form-control"
+                          className="form-control"
                           onChange={event => {
                             this.setState({
                               signInConfirmPassword: event.target.value
@@ -148,8 +148,8 @@ class Login extends Component {
                         />
                       </div>
                     </div>
-                    <div class="row major-padding">
-                      <label class="radio-inline">
+                    <div className="row major-padding">
+                      <label className="radio-inline">
                         <input
                           type="radio"
                           name="gender"
@@ -159,7 +159,7 @@ class Login extends Component {
                           checked={this.state.signInGender === 'Male'}
                         />Male
                       </label>
-                      <label class="radio-inline">
+                      <label className="radio-inline">
                         <input
                           type="radio"
                           name="gender"
@@ -170,19 +170,19 @@ class Login extends Component {
                         />Female
                       </label>
                     </div>
-                    <div class="row major-padding ">
+                    <div className="row major-padding ">
                       <label>Birthday</label>
                       <input
                         type="date"
                         name="bday"
-                        class="form-control"
+                        className="form-control"
                         onChange={event => {
                           this.setState({ singInDOB: event.target.value });
                         }}
                       />
                     </div>
-                    <div class="row minor-padding ">
-                      <span class="terms-text">
+                    <div className="row minor-padding ">
+                      <span className="terms-text">
                         By clicking Sign Up, you agree to our Terms, Data Policy
                         and Cookie Policy. You may receive SMS notifications
                         from us and can opt out at any time.
@@ -200,7 +200,7 @@ class Login extends Component {
                           this.state.singInDOB
                         );
                       }}
-                      class="btn btn-default btn-signin"
+                      className="btn btn-default btn-signin"
                     >
                       SignUp
                     </button>

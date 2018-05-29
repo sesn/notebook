@@ -3,33 +3,33 @@ import logo from '../../../Assets/logo.png';
 export default class AppLandingHeader extends Component {
   render() {
     return (
-      <div class="app-landing-container">
-        <div class="landing-logo-container">
-          <img src={logo} class="landing-logo" alt="Logo" />
-          <span class="logo-text">NOTEBOOK</span>
+      <div className="app-landing-container">
+        <div className="landing-logo-container">
+          <img src={logo} className="landing-logo" alt="Logo" />
+          <span className="logo-text">NOTEBOOK</span>
         </div>
-        <div class="login-form-container">
-          <div class="form-group form-internal-left spacing">
-            <label class="login-form-text">Email address:</label>
+        <div className="login-form-container">
+          <div className="form-group form-internal-left spacing">
+            <label className="login-form-text">Email address:</label>
             <input
               type="email"
-              class="form-control text-input"
+              className="form-control text-input"
               id="email"
               onChange={this.props.onChangeEmailLogin}
             />
           </div>
-          <div class="form-group form-internal-left spacing">
-            <label class="login-form-text">Password:</label>
+          <div className="form-group form-internal-left spacing">
+            <label className="login-form-text">Password:</label>
             <input
               type="password"
-              class="form-control text-input"
+              className="form-control text-input"
               id="password"
               onChange={this.props.onChangePasswordLogin}
             />
           </div>
-          <div class="form-internal-right">
+          <div className="form-internal-right">
             <button
-              class="btn btn-default btn-login"
+              className="btn btn-default btn-login"
               onClick={this.props.loginPress}
             >
               Login

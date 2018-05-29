@@ -21,27 +21,27 @@ class Comment extends React.Component {
     } = this.props.content;
     const { timeNum, timeUnit } = _returnTimeAgoStamp(timestamp);
     return (
-      <div class="row minor-padding">
-        <div class="col-lg-1 col-md-1 col-sm-1">
+      <div className="row minor-padding">
+        <div className="col-lg-1 col-md-1 col-sm-1">
           <img
             src={
               this.props.uID === authorID
                 ? this.props.currentUser && this.props.currentUser.profilePic
                 : faker.image.avatar()
             }
-            class="avatar-without-margin-big"
+            className="avatar-without-margin-big"
             alt="avatar"
           />
         </div>
-        <div class="col-lg-11 col-md-11 col-sm-11">
-          <div class="w3-card comment-card  minor-padding">
+        <div className="col-lg-11 col-md-11 col-sm-11">
+          <div className="w3-card comment-card  minor-padding">
             <Link to={`/user/${authorID}`}>{authorName}</Link> {content}
           </div>
-          <div class="row">
-            <button class="reply-btn">Like</button>
+          <div className="row">
+            <button className="reply-btn">Like</button>
             .
             <button
-              class="reply-btn"
+              className="reply-btn"
               onClick={() => {
                 this.setState({ showReplies: true });
               }}

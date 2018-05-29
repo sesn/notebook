@@ -5,11 +5,11 @@ class InputBox extends React.Component {
   render() {
     const { type } = this.props;
     return (
-      <div class="major-padding input-group">
-        <div class="input-group-addon">
+      <div className="major-padding input-group">
+        <div className="input-group-addon">
           <img
             src={this.props.currentUser && this.props.currentUser.profilePic}
-            class="avatar-without-margin"
+            className="avatar-without-margin"
             alt="avatar"
           />
         </div>
@@ -17,7 +17,7 @@ class InputBox extends React.Component {
         <input
           {...this.props}
           onChange={this.props.onChange}
-          class="form-control"
+          className="form-control"
           placeholder={
             type === 'reply'
               ? 'Type your reply here...'
@@ -28,8 +28,8 @@ class InputBox extends React.Component {
             if (event.keyCode === 13) this.props.sendPost();
           }}
         />
-        <span class="input-group-addon">
-          <i class="glyphicon glyphicon-camera" />
+        <span className="input-group-addon">
+          <i className="glyphicon glyphicon-camera" />
         </span>
       </div>
     );

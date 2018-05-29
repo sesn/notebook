@@ -22,7 +22,7 @@ class Home extends React.Component {
           notSignedAction={() => this.props.history.push('/')}
           redirect={() => this.props.history.push('/')}
         />
-        <div class="container">
+        <div className="container">
           <PostField />
           {this.props.feeds &&
             this.props.feeds

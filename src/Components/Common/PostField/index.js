@@ -7,17 +7,17 @@ class PostField extends React.Component {
   };
   render() {
     return (
-      <div class="w3-card minor-padding">
-        <div class="input-group">
-          <div class="input-group-addon">
+      <div className="w3-card minor-padding">
+        <div className="input-group">
+          <div className="input-group-addon">
             <img
               src={this.props.currentUser && this.props.currentUser.profilePic}
-              class="avatar-post"
+              className="avatar-post"
               alt="avatar"
             />
           </div>
           <textarea
-            class="form-control"
+            className="form-control"
             rows="4"
             value={this.state.post}
             placeholder="What's kicking?..."
@@ -37,7 +37,7 @@ class PostField extends React.Component {
               this.setState({ post: '' });
             }
           }}
-          class="btn-login w3-round-xxlarge minor-padding feed-margin flex-self"
+          className="btn-login w3-round-xxlarge minor-padding feed-margin flex-self"
         >
           Post
         </button>

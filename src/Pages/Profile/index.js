@@ -28,18 +28,18 @@ class User extends Component {
           notSignedAction={() => this.props.history.push('/')}
           redirect={() => this.props.history.push('/')}
         />
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-1 col-md-1 col-sm-1" />
-            <div class="col-lg-10 col-md-10 col-sm-10">
-              <div class="float-left avatar-profile-container">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-1 col-md-1 col-sm-1" />
+            <div className="col-lg-10 col-md-10 col-sm-10">
+              <div className="float-left avatar-profile-container">
                 <img
                   alt="profile-pic"
                   src={
                     this.props.currentUser && this.props.currentUser.profilePic
                     // : this.props.userData && this.props.userData.profilePic
                   }
-                  class="avatar-profile"
+                  className="avatar-profile"
                 />
               </div>
               <img
@@ -50,9 +50,9 @@ class User extends Component {
                       this.props.currentUser.coverPhoto
                     : this.props.userData && this.props.userData.coverPhoto
                 }
-                class="cover-photo"
+                className="cover-photo"
               />
-              <span class="user-name">
+              <span className="user-name">
                 {ownProfile
                   ? this.props.currentUser &&
                     this.props.currentUser.fName +
@@ -61,30 +61,30 @@ class User extends Component {
                   : this.props.userData &&
                     this.props.userData.fName + ' ' + this.props.userData.lName}
               </span>
-              <div class="content">
-                <div class="w3-card app-bar">
-                  <div class="float-right">
-                    <button class="btn btn-default reply-btn app-bar-button ">
+              <div className="content">
+                <div className="w3-card app-bar">
+                  <div className="float-right">
+                    <button className="btn btn-default reply-btn app-bar-button ">
                       Timeline
                     </button>
-                    <button class="btn btn-default reply-btn app-bar-button ">
+                    <button className="btn btn-default reply-btn app-bar-button ">
                       About
                     </button>
-                    <button class="btn btn-default reply-btn app-bar-button ">
+                    <button className="btn btn-default reply-btn app-bar-button ">
                       Friends
                     </button>
-                    <button class="btn btn-default reply-btn app-bar-button ">
+                    <button className="btn btn-default reply-btn app-bar-button ">
                       Photos
                     </button>
-                    <button class="btn btn-default reply-btn app-bar-button ">
+                    <button className="btn btn-default reply-btn app-bar-button ">
                       <span>
                         {' '}
-                        More <i class="glyphicon glyphicon-triangle-bottom" />
+                        More <i className="glyphicon glyphicon-triangle-bottom" />
                       </span>
                     </button>
                   </div>
                 </div>
-                <div class="feed-margin">
+                <div className="feed-margin">
                   <PostField />
                   {this.props.feed &&
                     this.props.feed
@@ -98,7 +98,7 @@ class User extends Component {
                 </div>
               </div>
             </div>
-            <div class="col-lg-1 col-md-1 col-sm-1" />
+            <div className="col-lg-1 col-md-1 col-sm-1" />
           </div>
         </div>
       </div>

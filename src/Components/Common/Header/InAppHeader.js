@@ -9,18 +9,18 @@ class InAppHeader extends Component {
       this.props.notSignedAction();
     }
     return (
-      <div class="in-app-header-container">
-        <div class="in-app-logo-container">
-          <img src={logo} class="in-app-logo" alt="InAppLogo" />
+      <div className="in-app-header-container">
+        <div className="in-app-logo-container">
+          <img src={logo} className="in-app-logo" alt="InAppLogo" />
         </div>
-        <div class="header-icons">
+        <div className="header-icons">
           <Link to={`/user/${this.props.uID}`}>
             <img
               src={this.props.currentUser && this.props.currentUser.profilePic}
-              class="avatar"
+              className="avatar"
               alt="avatar"
             />
-            <span class="text-icon major-padding">
+            <span className="text-icon major-padding">
               {this.props.currentUser &&
                 this.props.currentUser.fName +
                   ' ' +
@@ -28,36 +28,36 @@ class InAppHeader extends Component {
             </span>
           </Link>
           <Link to="/home">
-            <span class="text-icon major-padding">Home</span>
+            <span className="text-icon major-padding">Home</span>
           </Link>
-          <div class="float-right row">
-            <div class="icon-nav col-lg-2 col-md-2 col-sm-2">
-              <span class="icon-nav">
-                <i class="glyphicon glyphicon-user" />
+          <div className="float-right row">
+            <div className="icon-nav col-lg-2 col-md-2 col-sm-2">
+              <span className="icon-nav">
+                <i className="glyphicon glyphicon-user" />
               </span>
             </div>
-            <div class="icon-nav col-lg-2 col-md-2 col-sm-2">
+            <div className="icon-nav col-lg-2 col-md-2 col-sm-2">
               <span>
-                <i class="glyphicon glyphicon-send" />
+                <i className="glyphicon glyphicon-send" />
               </span>
             </div>
-            <div class="icon-nav col-lg-2 col-md-2 col-sm-2">
+            <div className="icon-nav col-lg-2 col-md-2 col-sm-2">
               <span>
-                <i class="glyphicon glyphicon-globe" />
+                <i className="glyphicon glyphicon-globe" />
               </span>
             </div>
-            <div class="icon-nav col-lg-2 col-md-2 col-sm-2">
+            <div className="icon-nav col-lg-2 col-md-2 col-sm-2">
               <span>
-                <i class="glyphicon glyphicon-question-sign" />
+                <i className="glyphicon glyphicon-question-sign" />
               </span>
             </div>
-            <div class="icon-nav col-lg-1 col-md-1 col-sm-1">
+            <div className="icon-nav col-lg-1 col-md-1 col-sm-1">
               <span>
-                <i class="glyphicon glyphicon-triangle-bottom" />
+                <i className="glyphicon glyphicon-triangle-bottom" />
               </span>
             </div>
             <button
-              class="btn btn-default btn-login"
+              className="btn btn-default btn-login"
               onClick={() => {
                 this.props.userSignOut();
                 this.props.redirect();
@@ -67,10 +67,10 @@ class InAppHeader extends Component {
             </button>
           </div>
         </div>
-        <div class="input-group search-input-container">
-          <input class="form-control search-input " placeholder="Search" />
-          <span class="input-group-addon search-icon">
-            <i class="glyphicon glyphicon-search" />
+        <div className="input-group search-input-container">
+          <input className="form-control search-input " placeholder="Search" />
+          <span className="input-group-addon search-icon">
+            <i className="glyphicon glyphicon-search" />
           </span>
         </div>
       </div>
